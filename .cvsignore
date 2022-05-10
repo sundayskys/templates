@@ -1,0 +1,16 @@
+### default_common_file template
+# IntelliJ project files
+.idea
+*.iml
+out
+gen
+.classpath
+
+# compile
+*/target/
+
+# logs
+log/
+
+# Mac
+.DS_Store
