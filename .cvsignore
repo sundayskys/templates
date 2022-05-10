@@ -11,6 +11,7 @@ gen
 
 # logs
 log/
+*/logs
 
 # Mac
 .DS_Store
