@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 
 /**
  * @author YanZhao
- * @description: TODO
+ * @description: 通过ConfigurationProperties
  * @date 2022年05月10日 18:01
  */
 

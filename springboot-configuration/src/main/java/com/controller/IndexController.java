@@ -1,6 +1,7 @@
 package com.controller;
 
 import com.properties.HostConfiguration;
+import com.properties.HostFileProperties;
 import com.properties.HostProperties;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -21,6 +22,9 @@ public class IndexController {
     private final HostProperties hostProperties;
 
     @Autowired
+    private HostFileProperties hostFileProperties;
+
+    @Autowired
     public IndexController(HostProperties hostProperties) {
         this.hostProperties = hostProperties;
     }
@@ -34,5 +38,10 @@ public class IndexController {
     @GetMapping("/host")
     public String hostProperties() {
         return "网站:"+hostProperties.getAddress()+"端口:"+hostProperties.getPort();
+    }
+    @GetMapping("hostfiles")
+    public String hostfileProperties(){
+        return "网站:"+hostFileProperties.getAddress()+"端口:"+hostFileProperties.getPort();
+
     }
 }

@@ -2,18 +2,19 @@ package com.properties;
 
 import lombok.Data;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.context.annotation.PropertySource;
 import org.springframework.stereotype.Component;
 
 /**
  * @author YanZhao
- * @description:
- * @date 2022年05月10日 17:57
+ * @description 指定文件
+ * @date 2022年05月11日 20:31
  */
 
 @Data
 @Component
-public class HostConfiguration {
+@PropertySource("classpath:application.yaml")
+public class HostFileProperties {
 
     @Value("${server.port}")
     private String port;
