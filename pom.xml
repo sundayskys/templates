@@ -15,6 +15,11 @@
         <module>extension-multEnvironment</module>
         <module>extension-logback</module>
         <module>springboot-thyleamf</module>
+        <module>springboot-orm-jdbctemplate</module>
+        <module>extension-war</module>
+        <module>extension-docker</module>
+        <module>springboot-orm-jpa</module>
+        <module>springboot-orm-mybatis-plus</module>
     </modules>
 
     <parent>
@@ -30,10 +35,6 @@
     </properties>
 
     <dependencies>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
